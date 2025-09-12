@@ -2,13 +2,16 @@
 	"name": "smartfix-tool-enforcement",
 	"version": "0.1.0-alpha",
 	"description": "SMARTFIX Tool Enforcement System - Intelligent Code Auto-Repair with AI",
-	"main": "src/api/app.js",
+	"main": "src/agents/nodejs/monitor_agent.js",
 	"scripts": {
-		"start": "node src/api/app.js",
-		"dev": "nodemon src/api/app.js",
+		"start": "node src/agents/nodejs/monitor_agent.js",
+		"dev": "nodemon src/agents/nodejs/monitor_agent.js",
+		"test": "jest",
+		"lint": "eslint src/agents/nodejs/",
+		"build": "npm run build:dashboard",
+		"build:dashboard": "cd src/dashboard && npm run build",
 		"deploy:alpha": "./scripts/deploy_alpha.sh",
-		"deploy:beta": "./scripts/deploy_beta.sh",
-		"test": "jest"
+		"deploy:beta": "./scripts/deploy_beta.sh"
 	},
 	"repository": {
 		"type": "git",
@@ -19,7 +22,8 @@
 		"code-repair",
 		"automation",
 		"ibm-cloud",
-		"smartfix"
+		"smartfix",
+		"tool-enforcement"
 	],
 	"author": "Marcos Mora",
 	"license": "Proprietary",
@@ -30,10 +34,26 @@
 	"dependencies": {
 		"express": "^4.18.2",
 		"axios": "^1.5.0",
-		"mongoose": "^7.5.0"
+		"mongoose": "^7.5.0",
+		"winston": "^3.10.0",
+		"joi": "^17.9.2",
+		"jsonwebtoken": "^9.0.2",
+		"bcryptjs": "^2.4.3",
+		"dotenv": "^16.3.1",
+		"yaml": "^2.3.4",
+		"node-cron": "^3.0.2",
+		"chalk": "^4.1.2"
 	},
 	"devDependencies": {
 		"nodemon": "^3.0.1",
-		"jest": "^29.6.0"
+		"jest": "^29.6.0",
+		"eslint": "^8.52.0",
+		"webpack": "^5.89.0",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	},
+	"engines": {
+		"node": ">=18.0.0",
+		"npm": ">=9.0.0"
 	}
 }

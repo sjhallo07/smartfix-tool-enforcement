@@ -1,3 +1,22 @@
+## 🚀 Instalación y Ejecución
+
+Sigue estos pasos para iniciar el proyecto:
+
+```sh
+# Clonar el repositorio
+git clone https://github.com/sjhallo07/smartfix-tool-enforcement.git
+cd smartfix-tool-enforcement
+
+# Instalar dependencias
+./scripts/install.sh
+
+# Configurar variables de entorno
+cp .env.example .env
+# Edita .env con tus configuraciones personales
+
+# Ejecutar en modo desarrollo
+npm run dev
+```
 # smartfix-tool-enforcement
 sistema de detección auto reparación inteligente con ML
 SMARTFIX - Sistema Inteligente de Auto-Reparación de Código
@@ -481,3 +500,82 @@ Aviso Legal: Este documento y la información contenida son propiedad intelectua
 © 2024 Marcos Mora. Todos los derechos reservados.
 
 Infraestructura proporcionada por IBM Cloud durante las fases de desarrollo y pruebas. La implementación de producción utilizará una arquitectura de nube híbrida para garantizar la seguridad y soberanía de los datos.
+# SMARTFIX Tool Enforcement System
+
+![SMARTFIX Logo](https://img.shields.io/badge/SMARTFIX-Tool%20Enforcement-blue)
+![License](https://img.shields.io/badge/License-Proprietary-red)
+![Version](https://img.shields.io/badge/Version-0.1.0--alpha-green)
+
+## 📋 Descripción del Proyecto
+
+SMARTFIX Tool Enforcement es un sistema avanzado de auto-reparación de código que utiliza inteligencia artificial para detectar, diagnosticar y corregir errores en aplicaciones software de manera automática. El sistema integra capacidades de análisis estático y dinámico, machine learning y procesamiento de lenguaje natural para ofrecer soluciones precisas con intervención humana mínima.
+
+**Autor**: Marcos Mora  
+**Copyright**: © 2024 Marcos Mora. Todos los derechos reservados bajo las leyes de la República Bolivariana de Venezuela.
+
+## 🚫 Licencia y Protección
+
+SMARTFIX es un software propietario protegido por:
+- Ley venezolana de Propiedad Intelectual (LOPPI)
+- Tratados internacionales de derecho de autor
+- Secreto comercial y know-how protegido
+- Proceso de patente internacional en curso
+
+**Queda estrictamente prohibido**:
+- La distribución no autorizada
+- La ingeniería inversa
+- El uso no licenciado
+- La modificación no autorizada
+
+## 🔍 Casos de Uso
+
+### 1. Detección y Corrección Automática de Errores
+- Identificación de bugs en tiempo real
+- Corrección automática con aprobación humana
+- Soporte para múltiples lenguajes de programación
+
+### 2. Gestión Inteligente de Forks de GitHub
+- Análisis automático de código en repositorios fork
+- Mejora de código con mantenimiento de compatibilidad
+- Generación automática de Pull Requests
+
+### 3. Monitoreo Continuo de Aplicaciones
+- Detección proactiva de problemas
+- Análisis de rendimiento y calidad de código
+- Alertas inteligentes con priorización
+
+### 4. Documentación Automatizada
+- Generación de changelogs detallados
+- Documentación de cambios y mejoras
+- Reportes de cumplimiento y auditoría
+
+## 🏗️ Arquitectura del Sistema
+
+```mermaid
+graph TB
+  subgraph "Capas del Sistema SMARTFIX"
+    A[Clientes & Aplicaciones] --> B[Agentes SMARTFIX]
+    B --> C[API Gateway]
+    C --> D[Servicios Core]
+        
+    subgraph D
+      D1[Análisis de Código]
+      D2[Motor de IA]
+      D3[Gestión de Repositorios]
+      D4[Sistema de Logs]
+    end
+        
+    D --> E[Almacenamiento]
+    E --> E1[Base de Datos]
+    E --> E2[Cache]
+    E --> E3[Almacenamiento Archivos]
+        
+    D --> F[Servicios Externos]
+    F --> F1[DeepSeek API]
+    F --> F2[GitHub API]
+    F --> F3[Servicios de Notificación]
+  end
+    
+  G[Dashboard Web] --> C
+  H[APIs Externas] --> C
+```
