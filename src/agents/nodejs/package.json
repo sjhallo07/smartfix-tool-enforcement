@@ -1,0 +1,8 @@
+{
+	"name": "smartfix-tool-enforcement",
+	"description": "SMARTFIX Tool Enforcement System - Intelligent Code Auto-Repair",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/sjhallo07/smartfix-tool-enforcement.git"
+	}
+}

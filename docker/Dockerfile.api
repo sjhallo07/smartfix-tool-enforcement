@@ -1,0 +1,2 @@
+LABEL org.opencontainers.image.title="smartfix-tool-enforcement-api"
+LABEL org.opencontainers.image.description="API for SMARTFIX Tool Enforcement System"

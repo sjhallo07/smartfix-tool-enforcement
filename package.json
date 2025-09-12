@@ -1,0 +1,39 @@
+{
+	"name": "smartfix-tool-enforcement",
+	"version": "0.1.0-alpha",
+	"description": "SMARTFIX Tool Enforcement System - Intelligent Code Auto-Repair with AI",
+	"main": "src/api/app.js",
+	"scripts": {
+		"start": "node src/api/app.js",
+		"dev": "nodemon src/api/app.js",
+		"deploy:alpha": "./scripts/deploy_alpha.sh",
+		"deploy:beta": "./scripts/deploy_beta.sh",
+		"test": "jest"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/sjhallo07/smartfix-tool-enforcement.git"
+	},
+	"keywords": [
+		"ai",
+		"code-repair",
+		"automation",
+		"ibm-cloud",
+		"smartfix"
+	],
+	"author": "Marcos Mora",
+	"license": "Proprietary",
+	"bugs": {
+		"url": "https://github.com/sjhallo07/smartfix-tool-enforcement/issues"
+	},
+	"homepage": "https://github.com/sjhallo07/smartfix-tool-enforcement#readme",
+	"dependencies": {
+		"express": "^4.18.2",
+		"axios": "^1.5.0",
+		"mongoose": "^7.5.0"
+	},
+	"devDependencies": {
+		"nodemon": "^3.0.1",
+		"jest": "^29.6.0"
+	}
+}

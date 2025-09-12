@@ -1,0 +1,6 @@
+ibm_cloud:
+	project: smartfix-tool-enforcement-alpha
+	resource_group: smartfix-tool-enforcement-alpha
+	applications:
+		api:
+			image: icr.io/smartfix-tool-enforcement/api:alpha
