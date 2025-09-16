@@ -1,0 +1,21 @@
+body {
+  background: linear-gradient(135deg, #e0e7ff 0%, #f0fdfa 100%);
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+h1 {
+  color: #2563eb;
+  text-shadow: 1px 1px 4px #c7d2fe;
+}
+.button {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.button:hover {
+  background: #1e40af;
+}
